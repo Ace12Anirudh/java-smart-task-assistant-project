@@ -100,11 +100,13 @@ git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 ```
 2. Reproduce the Build (Final Artifact Generation)
+
 We rebuild on the target server to verify dependency resolution and artifact integrity, a key DevOps practice.
 ```Bash
 mvn clean package
 ```
-3. Run the Application
+3. Run the Application.
+
 The application is started, utilizing the generated artifact. Note that output will be visible on the console. For production use, this would typically run via a service manager like systemd or within a container environment.
 ```Bash
 java -jar target/smart-task-manager-1.0.0.jar
@@ -123,6 +125,9 @@ smart-task-manager/
 
 ## 👤 Author
 Anirudh Ace | DevOps and Cloud Engineer
+
 Star ⭐ the repository if you appreciate projects focused on robust build automation and deployment readiness!
+
 GitHub: https://github.com/Ace12Anirudh
+
 LinkedIn: https://www.linkedin.com/in/anirudh-trivedi-4414b9244/
